@@ -39,7 +39,7 @@ public class Main {
 
     public static double calculateSumOfTermsOfSequence(double x, double n) {
         double sum = 0;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             sum += getNTermsOfSequence(x, i);
         }
         return sum;
@@ -48,7 +48,7 @@ public class Main {
     public static RowCalculateResult calculateSumOfTermsGreaterThenEpsilon(double x, double n, double e) {
         double sum = 0;
         int iteration = 1;
-        for (int i = 0; i < n; i++) {
+        for (int i = 0; i <= n; i++) {
             if (getNTermsOfSequence(x, i) > e) {
                 sum += getNTermsOfSequence(x, i);
                 iteration++;
